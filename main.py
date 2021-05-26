@@ -17,8 +17,8 @@ from slugify import slugify
 import os
 from console_progressbar import ProgressBar
 
-USERNAME = "0xecho"
-TOKEN = "0bb58720546cb70ce143e7ec68a0e91c64384307cadbd717ee1f2f1927baf938"
+USERNAME = os.getenv("USERNAME")
+TOKEN = os.getenv("TOKEN")
 BASE_URL = "https://open.kattis.com"
 LOGIN_URL = "https://open.kattis.com/login"
 LOGOUT_URL = "https://open.kattis.com/logout"
